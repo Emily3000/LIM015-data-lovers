@@ -1,4 +1,4 @@
-import {filterData} from '../src/data.js';
+import {filterData} from '../src/data';
 
 describe("filtrar data por directores",() =>{
   it("filterData es una función", ()=>{

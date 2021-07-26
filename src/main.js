@@ -25,9 +25,6 @@ function peliculasDefault() {
   filmshtml.innerHTML = htmls;
 }
 
-
-
-
 peliculasDefault();
 // Ejecutamos por defecto la función; cuando carga las peliculas al inicio (carga pagina films)
 
@@ -55,20 +52,20 @@ function filterData(data, conditions) {
   //Data son las peliculas
   //El resulta ya tiene las peliculas filtradas
   let resultFilter = data.filter(
-    (pelicula) => pelicula["director"] == conditions
+  (pelicula) => pelicula["director"] == conditions
   );
   return resultFilter;
 }
 
 function orderData(data, conditions) {
-  let resultOrder = [];
+ let resultOrder = [];
   // Lo que 1ero que debemos saber es la condicion,
   // para saber como se va ordenar
 
-  if (conditions == 1) {
+ if (conditions == 1) {
     // Esta condicion es para ordenar A-Z
 
-    resultOrder = data.sort(function (p1, p2) {
+   resultOrder = data.sort(function (p1, p2) {
       if (p1["title"] > p2["title"]) {
         return 1;
       }
@@ -111,7 +108,7 @@ function orderData(data, conditions) {
       }
       return 0;
     });
-  /*} else if (conditions == 5) {
+  } else if (conditions == 5) {
     //Esta condicion es para ordenar Score(+)
     resultOrder = data.sort(function (p1, p2) {
       if (p1["rt_score"] > p2["rt_score"]) {
@@ -134,22 +131,22 @@ function orderData(data, conditions) {
       }
       return 0;
     });
-  }*/
+  }
 }
-  else if(conditions==6){
+  else if(conditions==5){
     let resultOrder = data.sort((a,b)=>{
       return a.rt_score-b.rt_score;
-    })
+    });
     return resultOrder;
-
-  }else if(conditions==5){
+  }
+  else if(conditions==6){
     let resultOrder = data.sort((a,b)=>{
       return a.rt_score-b.rt_score;
     })
     return resultOrder.reverse();
   }
   return resultOrder;
-}
+};
 
 
 let botonFiltrar = document.getElementById("filtrar");
