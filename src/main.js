@@ -8,24 +8,14 @@ let htmls = "";
 function peliculasDefault() {
   filmsdata.forEach((pelicula) => {
     let auxPelicula = `<div class="films"> 
-        <img src= "${pelicula["poster"]}">
-            <div>
-            <h3>${pelicula["title"]}</h3> 
-            <p> 
-            ${pelicula["description"]}
-            </p>
-            <p>
-            Director: ${pelicula["director"]}
-            </p>
-            <p>
-            Producer: ${pelicula["producer"]}
-            </p>
-            <p>
-            Date: ${pelicula["release_date"]}
-            </p>
-            <p>
-            Score: ${pelicula["rt_score"]}
-            </p>
+        <img class="poster" src= "${pelicula["poster"]}">
+            <div class="contenido">
+              <h3 class="title">${pelicula["title"]}</h3>
+              <p class="description">${pelicula["description"]}</p>
+              <p class="director">Director: ${pelicula["director"]}</p>
+              <p class="producer">Producer: ${pelicula["producer"]}</p>
+              <p class="date">Date: ${pelicula["release_date"]}</p>
+              <p class="score">Score: ${pelicula["rt_score"]}</p>
             </div>
     </div>`;
 
@@ -35,6 +25,9 @@ function peliculasDefault() {
   filmshtml.innerHTML = htmls;
 }
 
+
+
+
 peliculasDefault();
 // Ejecutamos por defecto la función; cuando carga las peliculas al inicio (carga pagina films)
 
@@ -42,24 +35,14 @@ function peliculasPorSeleccion(peliculas) {
   htmls = "";
   peliculas.forEach((pelicula) => {
     let auxPelicula = `<div class="films"> 
-            <img src= "${pelicula["poster"]}">
-                <div>
-                <h3>${pelicula["title"]}</h3> 
-                <p> 
-                ${pelicula["description"]}
-                </p>
-                <p>
-                Director: ${pelicula["director"]}
-                </p>
-                <p>
-                Producer: ${pelicula["producer"]}
-                </p>
-                <p>
-                Date: ${pelicula["release_date"]}
-                </p>
-                <p>
-                Score: ${pelicula["rt_score"]}
-                </p>
+                <img class="poster" src= "${pelicula["poster"]}">
+                <div class="contenido">
+                  <h3 class="title">${pelicula["title"]}</h3>
+                  <p class="description">${pelicula["description"]}</p>
+                  <p class="director">Director: ${pelicula["director"]}</p>
+                  <p class="producer">Producer: ${pelicula["producer"]}</p>
+                  <p class="date">Date: ${pelicula["release_date"]}</p>
+                  <p class="score">Score: ${pelicula["rt_score"]}</p>
                 </div>
         </div>`;
 
@@ -67,7 +50,7 @@ function peliculasPorSeleccion(peliculas) {
   });
   filmshtml.innerHTML = htmls;
 }
-
+// data.js
 function filterData(data, conditions) {
   //Data son las peliculas
   //El resulta ya tiene las peliculas filtradas

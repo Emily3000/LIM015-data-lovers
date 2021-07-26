@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!--Cambios emily--> 
+<!--Cambios emily--> 
+<header id="header" class="header">
+  <span><img id="logoHome" class="logo" src="img/logo.png" alt="logo studio Ghibli"></span>
+  <a href="./films.html" id="btnFilms" class="btnHeader">Films</a>
+    <span id="btnAboutUs" class="btnHeader">About Us</span>
+</header>
 <section>
   <!--Input de busqueda-->
-  <input type="text" id="buscar" placeholder="Search...">
+  <!-- <input type="text" id="buscar" placeholder="Search..."> -->
   <div class="filtroPeliculas">
-    <label for="selectFiltro">Filter by:</label>
-    <select name="selectFiltro" id="selectFiltro">
-      <option value="Opcion">Choose and option</option>
+    <label class="filterby" ="selectFiltro">Filter by:</label>
+      <select class="selectdiv" name="selectFiltro" id="selectFiltro">
+      <option value="Opcion"></option>
       <option value="Hayao Miyazaki">Hayao Miyazaki</option>
       <option value="Isao Takahata">Isao Takahata</option>
       <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
@@ -24,12 +29,12 @@
       <option value="Gorō Miyazaki">Gorō Miyazaki</option>
       <option value="Hiroyuki Morita">Hiroyuki Morita</option>
     </select>
-    <button id="filtrar">Filtrar</button>
+    <button id="filtrar" class="boton">Filtrar</button>
   </div>
   <div class="orden">
-    <label for="selectOrden">Sort by:</label>
+    <label class="sortby" for="selectOrden">Sort by:</label>
     <select name="selectOrden" id="selectOrden">
-          <option value="0">Choose an option</option>
+          <option value="0"></option>
           <option value="1">A-Z</option>
           <option value="2">Z-A</option>
           <option value="3">Year(+)</option>
@@ -37,10 +42,10 @@
           <option value="5">Score(+)</option>
           <option value="6">Score(-)</option>
     </select>
-    <button id="ordenar">Ordenar</button>
+    <button id="ordenar" class="boton">Ordenar</button>
   </div> 
 </section>
-<section id="peliculasData" class="films">
+<section id="peliculasData" class="pelicula">
 </section>  
 ​
   <script src="./main.js" type="module"></script>

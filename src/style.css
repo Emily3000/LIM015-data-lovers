@@ -2,12 +2,21 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    
 }
 
 header {
-    background-color:#BDBDB1;
+    background-color:rgb(140, 101, 146);
     font-family: Stalinist One;
-    text-align: center;
+    
+
+}
+.imgprincipal{
+    background-position: left;
+    margin-right: 0px;
+    position:center;
+
+    
 }
 
 html {
@@ -16,13 +25,10 @@ html {
 
 .logo{
     margin-left: 5px;
-    width: 300px;
-    height: 150px;
-}
-
-#search{
-    border-radius: 20px;
-    font-size: 20px;
+    padding-left: 20px;
+    width: 250px;
+    height: 100px;
+    
 }
 
 .search{
@@ -31,7 +37,7 @@ html {
 }
 
 .btnHeader{
-    color:rgb(36, 35, 33);
+    color:rgb(140, 101, 146);
     background-color: #BDBDB1;
     font-size:25px;
     border-radius: 20px;
@@ -39,31 +45,23 @@ html {
     margin-left: 5px;
     margin-left: 10px;
     line-height: 50px;
-    text-align: center;
     width: 150px;
     height: 50px;
     font-weight: bold;
+    
 }
 
 .btnHeader:hover{
-    background-color: rgb(126, 126, 139);
+    background-color:rgb(140, 101, 146);
+    text-align: right 25px;
+
 }
 
 .slider{
     display: block;
     padding: 20px;
     text-align: center;
-}
 
-.filtersContainer{
-    padding: 40px;
-    justify-content: center;
-    margin: 20px 20px;
-}
-
-.filters{
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .select{
@@ -72,7 +70,7 @@ html {
     font-size:20px;
     border-radius: 20px;
     border-color: #BDBDB1;
-    text-align: center;
+    text-align: right;
     width: 200px;
     height: 40px;
 }
@@ -93,7 +91,7 @@ label{
 }
 
 footer{
-    background-color:#BDBDB1;
+    background-color: rgb(140, 101, 146);
     font-family: Stalinist One;
     text-align: center;
     position: sticky;
@@ -119,7 +117,82 @@ footer{
 #slider{
     display: block;
 }
+/* cambios Css Emily 
+Estructura Css: selector - propiedad - valor*/
 
 .films{
-    background-color: blue;
+    display: flex;
+    margin-bottom:5px;
+    margin-top:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 10px solid rgb(119, 1, 138);
+    border-radius: 10px;
+    background: rgb(140, 101, 146);
+
 }
+.filterby{
+    font-size:20px;
+    color: rgb(240, 67, 168);
+    font-weight:bold;
+    
+}
+.sortby{
+    font-size:20px;
+    color: rgb(240, 67, 168);
+    font-weight:bold;
+    font-display: auto;
+    
+}
+
+.title{
+    color: rgb(119, 1, 138);
+    padding-left:15px;
+    font-weight:bold 5px;
+    font-size:36px;
+    padding-bottom:15px;
+    padding-top: 20px;
+    
+}
+.description{
+    color:whitesmoke;
+    padding-left: 15px;
+    font-size: 20px;
+   
+
+}
+.boton{
+    background-color:rgb(214, 36, 146);
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.director{
+    color:whitesmoke;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.producer{
+    color:whitesmoke;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.date{
+    color:whitesmoke;
+    padding-left: 15px;
+    font-size: 20px;
+
+}
+.score{
+    color:whitesmoke;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+  
+  
