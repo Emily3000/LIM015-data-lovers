@@ -135,13 +135,13 @@ function orderData(data, conditions) {
     });
   }*/
 }
-  else if(conditions==5){
+  else if(conditions==6){
     let resultOrder = data.sort((a,b)=>{
       return a.rt_score-b.rt_score;
     });
     return resultOrder;
   }
-  else if(conditions==6){
+  else if(conditions==7){
     let resultOrder = data.sort((a,b)=>{
       return a.rt_score-b.rt_score;
     })

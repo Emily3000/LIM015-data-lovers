@@ -13,8 +13,8 @@ header {
 }
 .imgprincipal{
     background-position: left;
-    margin-right: 0px;
-    position:center;
+    margin-right: 90%;
+    display:flex;
 
     
 }
